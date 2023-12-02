@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade
 sudo apt install nala -y
 sudo nala upgrade
 echo "rootkidd is installing selection of packages for system setup"
-sudo nala install git net-tools npm nodejs vim rust kitty firefox-esr bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger nmap wpasupplicant -y
+sudo nala install curl git net-tools npm nodejs vim rust kitty firefox-esr bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger nmap wpasupplicant -y
 # install rust-analyzer
 echo "rootkidd is installing rust-analyzer"
 rustup component add rust-src
