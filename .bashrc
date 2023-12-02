@@ -10,13 +10,21 @@ esac
 
 # some colours
 BLACK="\[\e[30m\]"
-BLUE="\[\e[34m\]"
-CYAN="\[\e[36m\]"
-GREEN="\[\e[32m\]"
-MAGENTA="\[\e[35m\]"
 RED="\[\e[31m\]"
-WHITE="\[\e[37m\]"
+GREEN="\[\e[32m\]"
+ORANGE="\[\e[33m\]"
+BLUE="\[\e[34m\]"
+PURPLE="\[\e[35m\]"
+CYAN="\[\e[36m\]"
+LIGHTGRAY="\[\e[37m\]"
+DARKGRAY="\[\e[30m\]"
+LIGHTRED="\[\e[31m\]"
+LIGHTGREEN="\[\e[32m\]"
 YELLOW="\[\e[33m\]"
+LIGHTBLUE="\[\e[34m\]"
+LIGHTPURPLE="\[\e[35m\]"
+LIGHTCYAN="\[\e[36m\]"
+WHITE="\[\e[37m\]"
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
