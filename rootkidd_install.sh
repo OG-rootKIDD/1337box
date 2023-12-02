@@ -41,6 +41,6 @@ sudo nala install mullvad-vpn
 # install radare2
 echo "rootkidd is installing radare2"
 git clone https://github.com/radareorg/radare2
-radare2/sys/install.sh
+bash ~/radare2/sys/install.sh
 
 echo "rootkidd is done installing"
