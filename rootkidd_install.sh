@@ -19,17 +19,19 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # setup configs and images
-echo "rootkidd is installing bash mods"
-cp ./.bashrc ~/.bashrc
-echo "rootkidd is installing polybar launch script"
-cp -r ./bin ~/bin
-echo "rootkidd is installing configs"
-cp -r ./.config ~/.config
-cp ./.profile ~/.profile
-cp -r ./Pictures/Backgrounds ~/Pictures/Backgrounds
+mkdir ~/Pictures
+mkdir ~/Pictures/Backgrounds
+cp -r ~/1337box/Pictures/cyperpunk-girl-mask.png ~/Pictures/Backgrounds/cyperpunk-girl-mask.png
+cp -r ~/1337box/Pictures/disconnected4k.png ~/Pictures/Backgrounds/disconnected4k.png
+cp -r ~/1337box/Pictures/lock.png ~/Pictures/Backgrounds/lock.png
+cp ~/1337box/.bashrc ~/.bashrc
+cp -r ~/1337box/bin ~/bin
+cp -r ~/1337box/.config ~/.config
+cp ~/1337box/.profile ~/.profile
 
 sudo apt update
 sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
 rustup component add rust-src
 rustup component add rust-analyzer
 
