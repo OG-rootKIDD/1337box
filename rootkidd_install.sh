@@ -11,9 +11,7 @@ sudo curl -fsSLo /usr/share/keyrings/mullvad-keyring.asc https://repository.mull
 echo "deb [signed-by=/usr/share/keyrings/mullvad-keyring.asc arch=$( dpkg --print-architecture )] https://repository.mullvad.net/deb/stable $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/mullvad.list
 
 sudo apt update
-sudo nala install mullvad-vpn xorg xauth net-tools npm nodejs vim rust kitty firefox-esr bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger nmap wpasupplicant -y
-git clone https://github.com/radareorg/radare2
-bash ~/radare2/sys/install.sh
+sudo nala install mullvad-vpn xorg xauth net-tools npm nodejs vim kitty firefox-esr bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger nmap wpasupplicant -y
 
 sudo apt update
 # install vim plug-ins
@@ -35,4 +33,8 @@ sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup component add rust-src
 rustup component add rust-analyzer
 
+git clone https://github.com/radareorg/radare2
+bash ~/radare2/sys/install.sh
+
+sudo apt update && sudo apt upgrade
 sudo nala upgrade
