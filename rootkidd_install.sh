@@ -4,6 +4,17 @@
 # 	Debian install with no desktop environment
 # 	User created and added to sudo
 
+# setup configs and images
+mkdir ~/Pictures
+mkdir ~/Pictures/Backgrounds
+cp -r ~/1337box/Pictures/cyperpunk-girl-mask.png ~/Pictures/Backgrounds/cyperpunk-girl-mask.png
+cp -r ~/1337box/Pictures/disconnected4k.png ~/Pictures/Backgrounds/disconnected4k.png
+cp -r ~/1337box/Pictures/lock.png ~/Pictures/Backgrounds/lock.png
+cp ~/1337box/.bashrc ~/.bashrc
+cp -r ~/1337box/bin ~/bin
+cp -r ~/1337box/.config ~/.config
+cp ~/1337box/.profile ~/.profile
+
 # install base programs
 sudo apt update && sudo apt upgrade
 sudo apt install nala curl git -y
@@ -17,17 +28,6 @@ sudo apt update
 # install vim plug-ins
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# setup configs and images
-mkdir ~/Pictures
-mkdir ~/Pictures/Backgrounds
-cp -r ~/1337box/Pictures/cyperpunk-girl-mask.png ~/Pictures/Backgrounds/cyperpunk-girl-mask.png
-cp -r ~/1337box/Pictures/disconnected4k.png ~/Pictures/Backgrounds/disconnected4k.png
-cp -r ~/1337box/Pictures/lock.png ~/Pictures/Backgrounds/lock.png
-cp ~/1337box/.bashrc ~/.bashrc
-cp -r ~/1337box/bin ~/bin
-cp -r ~/1337box/.config ~/.config
-cp ~/1337box/.profile ~/.profile
 
 sudo apt update
 sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
