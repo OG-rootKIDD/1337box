@@ -5,15 +5,15 @@
 # 	User created and added to sudo
 
 # setup configs and images
-mkdir $HOME/Pictures
-mkdir $HOME/Pictures/Backgrounds
-cp -r $HOME/1337box/Pictures/cyperpunk-girl-mask.png $HOME/Pictures/Backgrounds/cyperpunk-girl-mask.png
-cp -r $HOME/1337box/Pictures/disconnected4k.png $HOME/Pictures/Backgrounds/disconnected4k.png
-cp -r $HOME/1337box/Pictures/lock.png $HOME/Pictures/Backgrounds/lock.png
-cp $HOME/1337box/.bashrc $HOME/.bashrc
-cp -r $HOME/1337box/bin $HOME/bin
-cp -r $HOME/1337box/.config $HOME/.config
-cp $HOME/1337box/.profile $HOME/.profile
+mkdir /home/rootkidd/Pictures
+mkdir /home/rootkidd/Pictures/Backgrounds
+cp -r /home/rootkidd/1337box/Pictures/cyperpunk-girl-mask.png /home/rootkidd/Pictures/Backgrounds/cyperpunk-girl-mask.png
+cp -r /home/rootkidd/1337box/Pictures/disconnected4k.png /home/rootkidd/Pictures/Backgrounds/disconnected4k.png
+cp -r /home/rootkidd/1337box/Pictures/lock.png /home/rootkidd/Pictures/Backgrounds/lock.png
+cp /home/rootkidd/1337box/.bashrc /home/rootkidd/.bashrc
+cp -r /home/rootkidd/1337box/bin /home/rootkidd/bin
+cp -r /home/rootkidd/1337box/.config /home/rootkidd/.config
+cp /home/rootkidd/1337box/.profile /home/rootkidd/.profile
 
 # install base programs
 sudo apt update && sudo apt upgrade
@@ -37,7 +37,7 @@ rustup component add rust-src
 rustup component add rust-analyzer
 
 git clone https://github.com/radareorg/radare2
-bash $HOME/radare2/sys/install.sh
+bash /home/rootkidd/radare2/sys/install.sh
 
 sudo apt update && sudo apt upgrade
 sudo nala upgrade
