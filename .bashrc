@@ -8,6 +8,16 @@ case $- in
       *) return;;
 esac
 
+# some colours
+BLACK="\[\e[30m\]"
+BLUE="\[\e[34m\]"
+CYAN="\[\e[36m\]"
+GREEN="\[\e[32m\]"
+MAGENTA="\[\e[35m\]"
+RED="\[\e[31m\]"
+WHITE="\[\e[37m\]"
+YELLOW="\[\e[33m\]"
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -112,19 +122,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-
-
-
-BLACK="\[\e[30m\]"
-BLUE="\[\e[34m\]"
-CYAN="\[\e[36m\]"
-GREEN="\[\e[32m\]"
-MAGENTA="\[\e[35m\]"
-RED="\[\e[31m\]"
-WHITE="\[\e[37m\]"
-YELLOW="\[\e[33m\]"
-
 
 
 . "$HOME/.cargo/env"
