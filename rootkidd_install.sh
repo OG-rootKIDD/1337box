@@ -6,14 +6,20 @@
 
 # setup configs and images
 cp /home/rootkidd/1337box/.bashrc /home/rootkidd/.bashrc
+sudo chown rootkidd /home/rootkidd/.bashrc
 cp /home/rootkidd/1337box/.profile /home/rootkidd/.profile
+sudo chown rootkidd /home/rootkidd/.profile
 mkdir /home/rootkidd/Pictures
+sudo chown rootkidd /home/rootkidd/Pictures
 mkdir /home/rootkidd/Pictures/Backgrounds
-cp -r /home/rootkidd/1337box/Pictures/Backgrounds/cyperpunk-girl-mask.png /home/rootkidd/Pictures/Backgrounds/cyperpunk-girl-mask.png
-cp -r /home/rootkidd/1337box/Pictures/Backgrounds/disconnected4k.png /home/rootkidd/Pictures/Backgrounds/disconnected4k.png
+sudo chown rootkidd /home/rootkidd/Pictures/Backgrounds
+cp -r /home/rootkidd/1337box/Pictures/Backgrounds/background.png /home/rootkidd/Pictures/Backgrounds/cyperpunk-girl-mask.png
 cp -r /home/rootkidd/1337box/Pictures/Backgrounds/lock.png /home/rootkidd/Pictures/Backgrounds/lock.png
+sudo chown -R rootkidd /home/rootkidd/Pictures
 cp -r /home/rootkidd/1337box/bin /home/rootkidd/bin
+sudo chown -R /home/rootkidd/bin
 cp -r /home/rootkidd/1337box/.config /home/rootkidd/.config
+sudo chown rootkidd /home/rootkidd/.config
 
 # install base programs
 sudo apt install nala  -y
@@ -39,4 +45,5 @@ bash /home/rootkidd/radare2/sys/install.sh
 
 sudo apt update && sudo apt upgrade
 sudo nala upgrade
+
 sudo reboot

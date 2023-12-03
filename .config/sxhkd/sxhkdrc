@@ -129,7 +129,7 @@ super + Return
 	kitty
 #lock screen
 super + d
-	i3lock --image ~/Pictures/Backgrounds/lock.png
+	i3lock --image ~/Pictures/Backgrounds/background2.png
 #lock and suspend
 super + shift + d
-	i3lock --image ~/Pictures/Backgrounds/lock.png && sudo pm-suspend
+	i3lock --image ~/Pictures/Backgrounds/background2.png && sudo pm-suspend
