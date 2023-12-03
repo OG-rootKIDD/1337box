@@ -23,13 +23,15 @@ mkdir /home/rootkidd/Pictures
 sudo chown rootkidd /home/rootkidd/Pictures
 mkdir /home/rootkidd/Pictures/Backgrounds
 sudo chown rootkidd /home/rootkidd/Pictures/Backgrounds
-cp -r /home/rootkidd/1337box/Pictures/Backgrounds/background.png /home/rootkidd/Pictures/Backgrounds/cyperpunk-girl-mask.png
-cp -r /home/rootkidd/1337box/Pictures/Backgrounds/lock.png /home/rootkidd/Pictures/Backgrounds/lock.png
+cp /home/rootkidd/1337box/Pictures/Backgrounds/background1.png /home/rootkidd/Pictures/Backgrounds/background1.png
+cp /home/rootkidd/1337box/Pictures/Backgrounds/background2.png /home/rootkidd/Pictures/Backgrounds/background2.png
+cp /home/rootkidd/1337box/Pictures/Backgrounds/background3.png /home/rootkidd/Pictures/Backgrounds/background3.png
+cp /home/rootkidd/1337box/Pictures/Backgrounds/background4.png /home/rootkidd/Pictures/Backgrounds/background4.png
 sudo chown -R rootkidd /home/rootkidd/Pictures
 cp -r /home/rootkidd/1337box/bin /home/rootkidd/bin
 sudo chown -R /home/rootkidd/bin
 cp -r /home/rootkidd/1337box/.config /home/rootkidd/.config
-sudo chown rootkidd /home/rootkidd/.config
+sudo chown -R rootkidd /home/rootkidd/.config
 
 # Programs
 sudo apt install nala  -y
