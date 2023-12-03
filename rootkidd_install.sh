@@ -9,9 +9,9 @@ cp /home/rootkidd/1337box/.bashrc /home/rootkidd/.bashrc
 cp /home/rootkidd/1337box/.profile /home/rootkidd/.profile
 mkdir /home/rootkidd/Pictures
 mkdir /home/rootkidd/Pictures/Backgrounds
-cp -r /home/rootkidd/1337box/Pictures/cyperpunk-girl-mask.png /home/rootkidd/Pictures/Backgrounds/cyperpunk-girl-mask.png
-cp -r /home/rootkidd/1337box/Pictures/disconnected4k.png /home/rootkidd/Pictures/Backgrounds/disconnected4k.png
-cp -r /home/rootkidd/1337box/Pictures/lock.png /home/rootkidd/Pictures/Backgrounds/lock.png
+cp -r /home/rootkidd/1337box/Pictures/Backgrounds/cyperpunk-girl-mask.png /home/rootkidd/Pictures/Backgrounds/cyperpunk-girl-mask.png
+cp -r /home/rootkidd/1337box/Pictures/Backgrounds/disconnected4k.png /home/rootkidd/Pictures/Backgrounds/disconnected4k.png
+cp -r /home/rootkidd/1337box/Pictures/Backgrounds/lock.png /home/rootkidd/Pictures/Backgrounds/lock.png
 cp -r /home/rootkidd/1337box/bin /home/rootkidd/bin
 cp -r /home/rootkidd/1337box/.config /home/rootkidd/.config
 
