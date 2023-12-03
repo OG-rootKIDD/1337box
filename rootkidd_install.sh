@@ -15,6 +15,8 @@ mkdir /home/rootkidd/.vim/autoload
 sudo chown rootkidd /home/rootkidd/.vim/autoload
 cp /home/rootkidd/1337box/.vim/autoload/plug.vim /home/rootkidd/.vim/autoload/plug.vim
 sudo chown rootkidd /home/rootkidd/.vim/autoload/plug.vim
+cp /home/rootkidd/1337box/.vimrc /home/rootkidd/.vimrc
+sudo chown rootkidd /home/rootkidd/.vimrc
 
 # Pictures
 mkdir /home/rootkidd/Pictures
