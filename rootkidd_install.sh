@@ -26,20 +26,12 @@ sudo apt install nala  -y
 sudo apt update && sudo apt upgrade
 sudo nala upgrade
 sudo nala install curl git xorg xauth net-tools npm nodejs vim kitty firefox-esr bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger nmap wpasupplicant -y
-
-sudo apt update
-sudo nala upgrade
-# install vim plug-ins
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 sudo apt update
 sudo nala upgrade
 sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 rustup component add rust-src
 rustup component add rust-analyzer
-
 git clone https://github.com/radareorg/radare2
 bash /home/rootkidd/radare2/sys/install.sh
 
