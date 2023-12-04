@@ -127,9 +127,16 @@ super + r
 # Terminal
 super + Return
 	kitty
-#lock screen
+# Lock screen
 super + d
 	i3lock --image ~/Pictures/Backgrounds/background2.png
-#lock and suspend
+# Lock and suspend
 super + shift + d
 	i3lock --image ~/Pictures/Backgrounds/background2.png && sudo pm-suspend
+# Volume control
+super + F2
+	amixer set Master 5%-
+super + F3
+	amixer set Master 5%+
+super + F1
+        amixer set Master toggle
